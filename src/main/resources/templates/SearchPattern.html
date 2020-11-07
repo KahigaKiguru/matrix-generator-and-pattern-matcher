@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+label {
+	display: inline-block;
+	width: 150px;
+	margin: 5px;
+	text-align: left;
+}
+
+button {
+	margin: 10px;
+	padding: 10px;
+	width: 200px;
+	color: blue;
+}
+</style>
+</head>
+<body>
+	<div align="center">
+		<form method="post" action="/square/{username}/{pattern}">
+		<h1>Enter Your Name and Take a guess</h1>
+		<h2>Enter any word (5 letters or longer) and if it matches the matrix, you win! </h2>
+		<label>Enter your name:</label>
+		<input type="text" name="username"><br><br>
+		<label>Enter a pattern: </label>
+		<input type="text" name="pattern"><br><br>
+		<button type="submit">Lets Play !</button>
+		</form>
+	</div>
+</body>
+</html>

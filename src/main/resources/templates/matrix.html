@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Enter the size of the matrix</title>
+<style type="text/css">
+label {
+	display: inline-block;
+	width: 150px;
+	margin: 5px;
+	text-align: left;
+}
+button {
+		margin: 10px;
+		padding: 10px;
+		width: 200px;
+		color: blue;
+}
+
+</style>
+</head>
+<body>
+	<div align="center">
+	<h1>First, we will need the size of the square matrix (no less than 5)</h1>
+	<br><br>
+	<form method="post" action="/square/{length}">
+	<label>Enter the length: </label>
+	<input type="number" name="length"><br><br>
+	
+	<button type="submit"> Start !</button>
+	</form>
+	</div>
+</body>
+</html>
